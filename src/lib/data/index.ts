@@ -86,10 +86,6 @@ export const techItems = [
     icon: SiNextdotjs,
   },
   {
-    label: "Vue.js",
-    icon: SiVuedotjs,
-  },
-  {
     label: "TailwindCSS",
     icon: BiLogoTailwindCss,
   },
@@ -100,10 +96,6 @@ export const techItems = [
   {
     label: "Figma",
     icon: SiFigma,
-  },
-  {
-    label: "Markdown",
-    icon: SiMarkdown,
   },
   {
     label: "MongoDB",

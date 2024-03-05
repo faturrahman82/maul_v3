@@ -14,12 +14,10 @@ import {
 } from "react-icons/bi";
 import {
   SiNextdotjs,
-  SiVuedotjs,
   SiBootstrap,
   SiFigma,
   SiMongodb,
   SiPrisma,
-  SiMarkdown,
   SiExpress,
   SiUpwork,
 } from "react-icons/si";

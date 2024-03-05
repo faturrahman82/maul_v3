@@ -19,7 +19,7 @@ export default function Home() {
         <div className="w-[90%]">
           <p className="font-semibold text-gray-400">
             I'm Front End Developer Based Indonesia, experience in utilizing
-            JavaScript and TypeScript for a wide range of development projects.
+            JavaScript for a wide range of development projects.
           </p>
         </div>
         <div className="flex items-center gap-5">

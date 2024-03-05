@@ -5,11 +5,9 @@ export default function About() {
       <div className="relative">
         <h1 className="text-white font-bold text-3xl">About me</h1>
         <p className="pt-3">
-          I&apos;m a full-stack developer based in Indonesia, experience in
-          utilizing JavaScript and TypeScript for a wide range of development
-          projects. Currently, I work as a freelance developer, taking on
-          projects for both frontend and backend development. I have
-          approximately 2 years of experience in this field.
+          I&apos;m a frontend web developer based in Indonesia, experience in
+          utilizing JavaScript for a wide range of development
+          projects.
         </p>
       </div>
       <div className="flex flex-col gap-3">

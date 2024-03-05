@@ -1,13 +1,12 @@
 import TechsList from "../components/molecules/TechsList";
 export default function About() {
   return (
-    <div className="flex flex-col gap-7 pb-[3.55rem]">
+    <div className="flex flex-col gap-7 pb-[7.8rem]">
       <div className="relative">
         <h1 className="text-white font-bold text-3xl">About me</h1>
         <p className="pt-3">
           I&apos;m a frontend web developer based in Indonesia, experience in
-          utilizing JavaScript for a wide range of development
-          projects.
+          utilizing JavaScript for a wide range of development projects.
         </p>
       </div>
       <div className="flex flex-col gap-3">

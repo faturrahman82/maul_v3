@@ -1,4 +1,4 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 import { INavLink } from "../../types/common";
 
@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full flex gap-8 mb-16">
-      {navLink.map((item, index) => (
+      {navLink.map((item) => (
         <NavLink
           key={item.path}
           to={item.path}

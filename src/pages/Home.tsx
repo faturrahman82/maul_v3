@@ -1,6 +1,6 @@
 import SocialIcon from "../components/molecules/SocialIcon";
 import Card from "../components/molecules/Card";
-import { social } from "../lib/data/index";
+import { projectPortofolio, social } from "../lib/data/index";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -25,14 +25,13 @@ export default function Home() {
         <div className="flex items-center gap-5">
           <button
             type="button"
-            className="rounded-md py-1 px-2 bg-gray-600/40 transition duration-300 ease-in-out hover:bg-gray-500"
+            className="rounded-md py-1 px-2 text-sm md:text-base bg-gray-600/40 transition duration-300 ease-in-out hover:bg-gray-500"
           >
             <a
               href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {" "}
               Get in touch
             </a>
           </button>
@@ -40,20 +39,35 @@ export default function Home() {
             <SocialIcon key={index} icon={item.icon} link={item.link} />
           ))}
         </div>
+        <div>
+          <button
+            type="button"
+            className="rounded-md text-sm md:text-base py-1 px-2 bg-gray-600/40 transition duration-300 ease-in-out hover:bg-gray-500"
+          >
+            <a
+              href="/maul.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+          </button>
+        </div>
       </div>
       <div>
         <h1 className="text-xl font-bold mt-20 mb-10">Portofolio</h1>
         <div className="grid sm:grid-cols-2 gap-4">
-          <Card
-            title="Portofolio V1"
-            description="My portofolio with html css js"
-            imageUrl="/img1.png"
-          />
-          <Card
-            title="Project Tim"
-            description="My project with tim"
-            imageUrl="/img4.png"
-          />
+          {projectPortofolio
+            .filter((data, index) => data && index % 3 === 0)
+            .map((content, index) => (
+              <Card
+                key={index}
+                title={content.title}
+                description={content.text}
+                imageUrl={content.img}
+                link={content.link}
+              />
+            ))}
         </div>
         <button
           type="button"

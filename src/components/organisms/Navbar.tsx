@@ -1,4 +1,3 @@
-
 import { NavLink } from "react-router-dom";
 import { INavLink } from "../../types/common";
 
@@ -10,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full flex gap-8 mb-16">
+    <div className="w-full flex gap-8 mb-16 justify-center sm:justify-start">
       {navLink.map((item) => (
         <NavLink
           key={item.path}
@@ -19,7 +18,7 @@ export default function Navbar() {
             `text-gray-500/60 text-lg ${
               isActive
                 ? "font-bold text-white"
-                : "font-normal text-gray-500 hover:text-neutral-600 "
+                : "font-normal hover:text-slate-400/80 text-gray-500 hover:text-neutral-600 "
             }`
           }
         >

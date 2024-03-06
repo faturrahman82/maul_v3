@@ -1,9 +1,7 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import { INavLink } from "../../types/common";
 import { createElement } from "react";
-import {
-  AiFillHtml5,
-} from "react-icons/ai";
+import { AiFillHtml5 } from "react-icons/ai";
 import { FaNode } from "react-icons/fa6";
 import {
   BiLogoReact,
@@ -113,20 +111,24 @@ export const projectPortofolio = [
     img: "/img1.png",
     title: "Portofolio V1",
     text: "My portofolio with html css js",
+    link: "https://portofolio-maulvi-a3fae.web.app/",
   },
   {
     img: "/img2.png",
-    title: "Project Tim",
-    text: "My Project with tim",
+    title: "kopi nyeni",
+    text: "Pesanan online",
+    link: "https://web-ngopi.web.app/",
   },
   {
     img: "/im3.png",
-    title: "Project Tim",
-    text: "My Project with tim",
+    title: "Dreams",
+    text: "Destinasi berbagai macam negara",
+    link: "https://my-drems-tour.vercel.app/#",
   },
   {
     img: "/img4.png",
     title: "Project Tim",
     text: "My Project with tim",
+    link: "",
   },
 ];

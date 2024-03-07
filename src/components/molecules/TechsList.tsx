@@ -6,7 +6,7 @@ export default function TechsList() {
       {techItems.map((item, index) => {
         const Icon = item.icon
         return (
-          <div key={index} className="bg-baseBg rounded-lg flex items-center gap-1 py-1.5 px-2.5">
+          <div key={index} className="rounded-lg flex items-center gap-1 py-1.5 px-2.5">
             <Icon className="text-xl" />
             <span className="text-sm">{item.label}</span>
           </div>

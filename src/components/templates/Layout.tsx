@@ -1,4 +1,4 @@
-import Projects from "../../pages/Projects";
+import Projects from "../../pages/Portofolio";
 import Home from "../../pages/Home";
 
 export default function Layout() {

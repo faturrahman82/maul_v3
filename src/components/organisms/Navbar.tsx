@@ -5,7 +5,7 @@ export default function Navbar() {
   const navLink: INavLink[] = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Projects", path: "/project" },
+    { name: "Portofolio", path: "/portofolio" },
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function Navbar() {
           key={item.path}
           to={item.path}
           className={({ isActive }) =>
-            `text-gray-500/60 text-lg ${
+            `text-gray-500/60 text-xl ${
               isActive
                 ? "font-bold text-white"
                 : "font-normal hover:text-slate-400/80 text-gray-500 hover:text-neutral-600 "

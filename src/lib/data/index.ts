@@ -132,3 +132,18 @@ export const projectPortofolio = [
     link: "",
   },
 ];
+
+export const languageData = [
+  {
+    bahasa: "Bahasa Indonesia:",
+    Proficiency: "Native",
+  },
+  {
+    bahasa: "English:",
+    Proficiency: "Conversational",
+  },
+  {
+    bahasa: "Japanase:",
+    Proficiency: "Conversational",
+  },
+];
